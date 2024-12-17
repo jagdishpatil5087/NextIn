@@ -1,0 +1,117 @@
+.section_plane{
+    border: 2px solid transparent ;
+    width: 100%;
+    height: 100vh;
+   overflow: hidden; 
+   
+    
+}
+
+.plane-big-section{
+    border: 5px solid blue;
+    width: 200%;
+    height: 100%;
+    display: flex;
+}
+
+
+
+.data-section{
+    border: 2px solid transparent ;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.plane-data-box{
+    border: 2px solid transparent ;
+    width: 65%;
+    height: 100px;
+    overflow: hidden;
+  /*   box-shadow: 0px 0px 5px rgb(122, 122, 122); */
+}
+
+.text-data{
+    border: 2px red ;
+    width: 0%;
+    height: 100%;
+    font-size: clamp(10px, 6vw, 50px);
+    padding-left: 10%;
+    align-content: center;
+    text-wrap: nowrap;
+    overflow: hidden;
+    font-family: "Moderustic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    word-spacing: 5px;
+  /*   transition: 2s; */
+}
+
+
+@media (max-width:700px) and (min-width: 300px) {
+
+    .plane-data-box{
+        width: 100%;
+    }
+
+    .text-data{
+        padding-left: 0px;
+    }
+
+}
+
+.plane_side_section{
+    border: 2px solid transparent;
+    width: 50%;
+    height: 100%;
+    background-color: crimson; 
+    display: flex;
+    margin-left: -50%;
+    transition: 2s;
+   
+}
+
+
+ 
+.side_display{
+    border:  2px solid transparent;
+    width: 50%;
+    height: 100%;
+
+}
+
+.plane_img_box{
+    border: 2px solid transparent ;
+    width: 100%;
+    height: 100%;
+    margin-left: -40%;
+    overflow: hidden;
+
+    
+}
+
+.plane_child_img{
+    border: 2px solidtransparent ;
+    width: 100%;
+    height: 100%;
+    margin-left: -30px;
+    transform: rotate(135deg);
+    background-image: url("Flying-airplane-vector-PNG.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+
+}
+
+.side_right{
+    font-size: clamp(10px, 10vw, 200px);
+    color: white;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    align-content: center;
+    cursor: pointer;
+}

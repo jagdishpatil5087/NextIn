@@ -1,0 +1,195 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box ;
+}
+
+
+.section-1{
+    border: 2px solid black ;
+    width: 100%;
+    height: 100vh;
+
+    
+}
+
+.gallery-div-1{
+    border: 2px solid transparent ;
+    width: 40%;
+    height: 30%;
+    position: absolute;
+    top: 5%;
+    left:15%;
+   /*  box-shadow: 0px 0px 5px rgb(118, 118, 118); */
+}
+
+.gallery-div-2{
+    border: 2px solid transparent ;
+   
+    width: 20%;
+    height: 55%;
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    /* box-shadow: 0px 0px 5px rgb(118, 118, 118); */
+}
+
+.gallery-div-3{
+    border: 2px solid transparent;
+    background-color: transparent;
+    width: 20%;
+    height: 55%;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+   /*  box-shadow: 0px 0px 5px rgb(118, 118, 118); */
+}
+
+.gallery-div-4{
+    border: 2px solid transparent ;
+    width: 40%;
+    height: 30%;
+    position: absolute;
+    top: 65%;
+    left: 45%;
+/*     box-shadow: 0px 0px 5px rgb(118, 118, 118); */
+}
+
+.gallery-title{
+    border: 2px solid transparent ;
+    width: 40%;
+    height: 30%;
+    position: absolute;
+    top: 35%;
+    left: 27%;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 130px;
+    text-align: center;
+    align-content: center;
+}
+
+.center-gallery-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.center-gallery{
+    border: 2px solid transparent;
+    width: 80%;
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    transition: 1s;
+
+}
+
+
+.gallery-photo-1{
+    background-image: url(gallery/photo_1.jpg);
+}
+.gallery-photo-2{
+    background-image: url(gallery/photo_2.jpg);
+}
+.gallery-photo-3{
+    background-image: url(gallery/photo_3.jpg);
+}
+.gallery-photo-4{
+    background-image: url(gallery/photo_4.jpg);
+}
+
+.main_section{
+    border: 2px solid black ;
+    width: 100%;
+    height: 400vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.photo_box{
+    border: 2px solid  transparent;
+    width: 21%;
+    height: 400px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+
+.photo_box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px rgb(130, 130, 130);
+}
+
+.p1{
+    background-image: url(gallery/p1.jpg);
+}
+.p2{
+    background-image: url(gallery/p2.jpg);
+}
+.p3{
+    background-image: url(gallery/p3.jpg);
+}
+.p4{
+    background-image: url(gallery/p4.jpg);
+}
+
+.p5{
+    background-image: url(gallery/p5.jpg);
+}
+.p6{
+    background-image: url(gallery/p6.jpg);
+}
+.p7{
+    background-image: url(gallery/p7.jpg);
+}
+.p8{
+    background-image: url(gallery/p8.jpg);
+}
+.p9{
+    background-image: url(gallery/p9.jpg);
+}
+.p10{
+    background-image: url(gallery/p10.jpg);
+}
+.p11{
+    background-image: url(gallery/p11.jpg);
+}
+.p12{
+    background-image: url(gallery/p12.jpg);
+}
+.p13{
+    background-image: url(gallery/p13.jpg);
+}
+.p14{
+    background-image: url(gallery/p14.jpg);
+}
+.p15{
+    background-image: url(gallery/p15.jpg);
+}
+
+
+.p16{
+    background-image: url(gallery/p16.jpg);
+}
+
+.p17{
+    background-image: url(gallery/p17.jpg);
+}
+.p18{
+    background-image: url(gallery/p18.jpg);
+}
+.p19{
+    background-image: url(gallery/p19.jpg);
+}
+.p20{
+    background-image: url(gallery/p20.jpg);
+}
+
+

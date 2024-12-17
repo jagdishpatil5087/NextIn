@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Merienda:wght@300..900&family=Moderustic:wght@300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=DM+Serif+Display:ital@0;1&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Merienda:wght@300..900&family=Moderustic:wght@300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Great+Vibes&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Merienda:wght@300..900&family=Moderustic:wght@300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Great+Vibes&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Merienda:wght@300..900&family=Moderustic:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+<body>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .main_container {
+            border: 2px solid transparent;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            /* overflow: hidden; */
+
+
+        }
+
+        .left_section {
+            width: 50%;
+            height: 200%;
+        }
+
+        .right_section {
+            width: 50%;
+            height: 100%;
+            background-color: white;
+            border: 2px solid transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .down_section {
+            width: 100%;
+            height: 50%;
+            background-color: transparent;
+            position: sticky;
+            top: 0px;
+            background-image: url(img_1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .information_box {
+            border: 2px solid transparent;
+            width: 90%;
+            height: 70%;
+        }
+
+        .information_box h1 {
+            font-size: 30px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+
+
+        .information_box p {
+            padding-top: 50px;
+            font-size: 17px;
+            line-height: 25px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            text-align: justify;
+        }
+
+        #right_id{
+            height: 100%;
+        }
+        #down_id{
+            height: 100%;
+        }
+
+        @media (max-width:1000px) and (min-width: 0px) {
+
+            .main_container {
+                width: 100%;
+                height: 120vh;
+            }
+
+            .left_section {
+                width: 100%;
+                height: 30%;
+                order: 1;
+
+            }
+
+            .right_section {
+                width: 100%;
+                height: 70%;
+                order: 2;
+            }
+
+            .down_section {
+                height: 100%;
+                width: 100%;
+                position: static;
+            }
+
+            .information_box {
+                width: 90%;
+                height: 90%;
+            }
+
+
+        }
+
+
+
+        .number2 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .number3 {
+            z-index: 3;
+        }
+
+        .number4 {
+            z-index: 4;
+        }
+
+        .number5 {
+            z-index: 5;
+        }
+
+        .number6 {
+            z-index: 6;
+        }
+
+        .number7 {
+            z-index: 7;
+        }
+
+        .number8 {
+            z-index: 8;
+        }
+
+        .number9 {
+            z-index: 9;
+        }
+
+        .number10 {
+            z-index: 10;
+        }
+
+        .Italy_img_1 {
+            background-image: url(world_img/Italy_2.png);
+        }
+
+        .Italy_img_2 {
+            background-image: url(world_img/Italy_1.jpg);
+        }
+
+        .Italy_img_3 {
+            background-image: url(world_img/Italy_3.jpg);
+        }
+
+        .Italy_img_4 {
+            background-image: url(world_img/Italy_4.jpg);
+        }
+
+        .Italy_img_5 {
+            background-image: url(world_img/Italy_5.jpg);
+        }
+
+        .Italy_img_6 {
+            background-image: url(world_img/Italy_6.jpg);
+        }
+
+        .Italy_img_7 {
+            background-image: url(world_img/Italy_7.jpg);
+        }
+
+        .Italy_img_8 {
+            background-image: url(world_img/Italy_8.png);
+        }
+
+        .Italy_img_9 {
+            background-image: url(world_img/Italy_9.png);
+        }
+
+        .Italy_img_10 {
+            background-image: url(world_img/Italy_10.png);
+        }
+    </style>
+    </head>
+
+    <body>
+        <section>
+
+            <!-- left  -->
+
+            <div class="main_container number1">
+
+                <div class="left_section ">
+                    <div class="down_section Italy_img_1">
+
+                    </div>
+                </div>
+                <div class="right_section">
+                    <div class="information_box">
+                        <h1>Cinque Terre</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit magni numquam,
+                            repellendus aliquid ipsam odit cumque accusantium et dolore temporibus ad molestias
+                            excepturi
+                            pariatur aspernatur. Recusandae iusto et obcaecati reiciendis soluta. Delectus perferendis
+                            quisquam hic inventore nam at vitae pariatur doloribus fugiat tempora nobis voluptates
+                            corrupti
+                            illo ut facere dolores, fugit eveniet rerum mollitia alias consequatur dolor. Ipsum dicta
+                            temporibus eligendi eos eveniet consequuntur voluptatibus, recusandae, et, dignissimos
+                            explicabo
+                            natus quaerat nam vero! Fugit non deserunt, reiciendis odio quia quidem esse cum ut sunt
+                            pariatur libero dolor officiis suscipit saepe aliquam necessitatibus totam facere tempore
+                            voluptates exercitationem odit nostrum debitis perferendis asperiores. Repellat vitae eum
+                            laboriosam adipisci magnam necessitatibus, culpa quisquam! Atque reiciendis ipsam hic
+                            incidunt
+                            iste explicabo consequatur ea doloribus facilis, nobis ad quod neque quam cupiditate
+                            obcaecati?
+                            Sequi animi debitis omnis veniam id minus porro repellat voluptatem at consequatur
+                            voluptatibus
+                            sint, eveniet nisi quaerat quam ullam dicta!</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- right  -->
+
+            <div class="main_container number2">
+
+                <div class="right_section">
+                    <div class="information_box">
+                        <h1>Historic Centre of Rome </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit magni numquam,
+                            repellendus aliquid ipsam odit cumque accusantium et dolore temporibus ad molestias
+                            excepturi
+                            pariatur aspernatur. Recusandae iusto et obcaecati reiciendis soluta. Delectus perferendis
+                            quisquam hic inventore nam at vitae pariatur doloribus fugiat tempora nobis voluptates
+                            corrupti
+                            illo ut facere dolores, fugit eveniet rerum mollitia alias consequatur dolor. Ipsum dicta
+                            temporibus eligendi eos eveniet consequuntur voluptatibus, recusandae, et, dignissimos
+                            explicabo
+                            natus quaerat nam vero! Fugit non deserunt, reiciendis odio quia quidem esse cum ut sunt
+                            pariatur libero dolor officiis suscipit saepe aliquam necessitatibus totam facere tempore
+                            voluptates exercitationem odit nostrum debitis perferendis asperiores. Repellat vitae eum
+                            laboriosam adipisci magnam necessitatibus, culpa quisquam! Atque reiciendis ipsam hic
+                            incidunt
+                            iste explicabo consequatur ea doloribus facilis, nobis ad quod neque quam cupiditate
+                            obcaecati?
+                            Sequi animi debitis omnis veniam id minus porro repellat voluptatem at consequatur
+                            voluptatibus
+                            sint, eveniet nisi quaerat quam ullam dicta!</p>
+                    </div>
+                </div>
+
+                <div class="left_section ">
+                    <div class="down_section Italy_img_2">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- left  -->
+
+            <div class="main_container number3">
+
+                <div class="left_section ">
+                    <div class="down_section Italy_img_3">
+
+                    </div>
+                </div>
+                <div class="right_section">
+                    <div class="information_box">
+                        <h1>Venice and its Lagoon</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit magni numquam,
+                            repellendus aliquid ipsam odit cumque accusantium et dolore temporibus ad molestias
+                            excepturi
+                            pariatur aspernatur. Recusandae iusto et obcaecati reiciendis soluta. Delectus perferendis
+                            quisquam hic inventore nam at vitae pariatur doloribus fugiat tempora nobis voluptates
+                            corrupti
+                            illo ut facere dolores, fugit eveniet rerum mollitia alias consequatur dolor. Ipsum dicta
+                            temporibus eligendi eos eveniet consequuntur voluptatibus, recusandae, et, dignissimos
+                            explicabo
+                            natus quaerat nam vero! Fugit non deserunt, reiciendis odio quia quidem esse cum ut sunt
+                            pariatur libero dolor officiis suscipit saepe aliquam necessitatibus totam facere tempore
+                            voluptates exercitationem odit nostrum debitis perferendis asperiores. Repellat vitae eum
+                            laboriosam adipisci magnam necessitatibus, culpa quisquam! Atque reiciendis ipsam hic
+                            incidunt
+                            iste explicabo consequatur ea doloribus facilis, nobis ad quod neque quam cupiditate
+                            obcaecati?
+                            Sequi animi debitis omnis veniam id minus porro repellat voluptatem at consequatur
+                            voluptatibus
+                            sint, eveniet nisi quaerat quam ullam dicta!</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- right  -->
+
+            <div class="main_container number4">
+
+                <div class="right_section">
+                    <div class="information_box">
+                        <h1>Florence</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit magni numquam,
+                            repellendus aliquid ipsam odit cumque accusantium et dolore temporibus ad molestias
+                            excepturi
+                            pariatur aspernatur. Recusandae iusto et obcaecati reiciendis soluta. Delectus perferendis
+                            quisquam hic inventore nam at vitae pariatur doloribus fugiat tempora nobis voluptates
+                            corrupti
+                            illo ut facere dolores, fugit eveniet rerum mollitia alias consequatur dolor. Ipsum dicta
+                            temporibus eligendi eos eveniet consequuntur voluptatibus, recusandae, et, dignissimos
+                            explicabo
+                            natus quaerat nam vero! Fugit non deserunt, reiciendis odio quia quidem esse cum ut sunt
+                            pariatur libero dolor officiis suscipit saepe aliquam necessitatibus totam facere tempore
+                            voluptates exercitationem odit nostrum debitis perferendis asperiores. Repellat vitae eum
+                            laboriosam adipisci magnam necessitatibus, culpa quisquam! Atque reiciendis ipsam hic
+                            incidunt
+                            iste explicabo consequatur ea doloribus facilis, nobis ad quod neque quam cupiditate
+                            obcaecati?
+                            Sequi animi debitis omnis veniam id minus porro repellat voluptatem at consequatur
+                            voluptatibus
+                            sint, eveniet nisi quaerat quam ullam dicta!</p>
+                    </div>
+                </div>
+
+                <div class="left_section">
+                    <div class="down_section Italy_img_4">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- left  -->
+
+            <div class="main_container number5">
+
+                <div class="left_section">
+                    <div class="down_section Italy_img_5">
+
+                    </div>
+                </div>
+                <div class="right_section">
+                    <div class="information_box">
+                        <h1>The Amalfi Coast</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit magni numquam,
+                            repellendus aliquid ipsam odit cumque accusantium et dolore temporibus ad molestias
+                            excepturi
+                            pariatur aspernatur. Recusandae iusto et obcaecati reiciendis soluta. Delectus perferendis
+                            quisquam hic inventore nam at vitae pariatur doloribus fugiat tempora nobis voluptates
+                            corrupti
+                            illo ut facere dolores, fugit eveniet rerum mollitia alias consequatur dolor. Ipsum dicta
+                            temporibus eligendi eos eveniet consequuntur voluptatibus, recusandae, et, dignissimos
+                            explicabo
+                            natus quaerat nam vero! Fugit non deserunt, reiciendis odio quia quidem esse cum ut sunt
+                            pariatur libero dolor officiis suscipit saepe aliquam necessitatibus totam facere tempore
+                            voluptates exercitationem odit nostrum debitis perferendis asperiores. Repellat vitae eum
+                            laboriosam adipisci magnam necessitatibus, culpa quisquam! Atque reiciendis ipsam hic
+                            incidunt
+                            iste explicabo consequatur ea doloribus facilis, nobis ad quod neque quam cupiditate
+                            obcaecati?
+                            Sequi animi debitis omnis veniam id minus porro repellat voluptatem at consequatur
+                            voluptatibus
+                            sint, eveniet nisi quaerat quam ullam dicta!</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- right  -->
+
+            <div class="main_container number6">
+
+                <div class="right_section">
+                    <div class="information_box">
+                        <h1>Pompeii and Herculaneum </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit magni numquam,
+                            repellendus aliquid ipsam odit cumque accusantium et dolore temporibus ad molestias
+                            excepturi
+                            pariatur aspernatur. Recusandae iusto et obcaecati reiciendis soluta. Delectus perferendis
+                            quisquam hic inventore nam at vitae pariatur doloribus fugiat tempora nobis voluptates
+                            corrupti
+                            illo ut facere dolores, fugit eveniet rerum mollitia alias consequatur dolor. Ipsum dicta
+                            temporibus eligendi eos eveniet consequuntur voluptatibus, recusandae, et, dignissimos
+                            explicabo
+                            natus quaerat nam vero! Fugit non deserunt, reiciendis odio quia quidem esse cum ut sunt
+                            pariatur libero dolor officiis suscipit saepe aliquam necessitatibus totam facere tempore
+                            voluptates exercitationem odit nostrum debitis perferendis asperiores. Repellat vitae eum
+                            laboriosam adipisci magnam necessitatibus, culpa quisquam! Atque reiciendis ipsam hic
+                            incidunt
+                            iste explicabo consequatur ea doloribus facilis, nobis ad quod neque quam cupiditate
+                            obcaecati?
+                            Sequi animi debitis omnis veniam id minus porro repellat voluptatem at consequatur
+                            voluptatibus
+                            sint, eveniet nisi quaerat quam ullam dicta!</p>
+                    </div>
+                </div>
+
+                <div class="left_section">
+                    <div class="down_section Italy_img_6">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- left  -->
+
+            <div class="main_container number7">
+
+                <div class="left_section">
+                    <div class="down_section Italy_img_7">
+
+                    </div>
+                </div>
+                <div class="right_section">
+                    <div class="information_box">
+                        <h1>Cinque Terre </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit magni numquam,
+                            repellendus aliquid ipsam odit cumque accusantium et dolore temporibus ad molestias
+                            excepturi
+                            pariatur aspernatur. Recusandae iusto et obcaecati reiciendis soluta. Delectus perferendis
+                            quisquam hic inventore nam at vitae pariatur doloribus fugiat tempora nobis voluptates
+                            corrupti
+                            illo ut facere dolores, fugit eveniet rerum mollitia alias consequatur dolor. Ipsum dicta
+                            temporibus eligendi eos eveniet consequuntur voluptatibus, recusandae, et, dignissimos
+                            explicabo
+                            natus quaerat nam vero! Fugit non deserunt, reiciendis odio quia quidem esse cum ut sunt
+                            pariatur libero dolor officiis suscipit saepe aliquam necessitatibus totam facere tempore
+                            voluptates exercitationem odit nostrum debitis perferendis asperiores. Repellat vitae eum
+                            laboriosam adipisci magnam necessitatibus, culpa quisquam! Atque reiciendis ipsam hic
+                            incidunt
+                            iste explicabo consequatur ea doloribus facilis, nobis ad quod neque quam cupiditate
+                            obcaecati?
+                            Sequi animi debitis omnis veniam id minus porro repellat voluptatem at consequatur
+                            voluptatibus
+                            sint, eveniet nisi quaerat quam ullam dicta!</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- right  -->
+            <div class="main_container number8">
+
+                <div class="right_section">
+                    <div class="information_box">
+                        <h1>Vatican City</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit magni numquam,
+                            repellendus aliquid ipsam odit cumque accusantium et dolore temporibus ad molestias
+                            excepturi
+                            pariatur aspernatur. Recusandae iusto et obcaecati reiciendis soluta. Delectus perferendis
+                            quisquam hic inventore nam at vitae pariatur doloribus fugiat tempora nobis voluptates
+                            corrupti
+                            illo ut facere dolores, fugit eveniet rerum mollitia alias consequatur dolor. Ipsum dicta
+                            temporibus eligendi eos eveniet consequuntur voluptatibus, recusandae, et, dignissimos
+                            explicabo
+                            natus quaerat nam vero! Fugit non deserunt, reiciendis odio quia quidem esse cum ut sunt
+                            pariatur libero dolor officiis suscipit saepe aliquam necessitatibus totam facere tempore
+                            voluptates exercitationem odit nostrum debitis perferendis asperiores. Repellat vitae eum
+                            laboriosam adipisci magnam necessitatibus, culpa quisquam! Atque reiciendis ipsam hic
+                            incidunt
+                            iste explicabo consequatur ea doloribus facilis, nobis ad quod neque quam cupiditate
+                            obcaecati?
+                            Sequi animi debitis omnis veniam id minus porro repellat voluptatem at consequatur
+                            voluptatibus
+                            sint, eveniet nisi quaerat quam ullam dicta!</p>
+                    </div>
+                </div>
+
+                <div class="left_section">
+                    <div class="down_section Italy_img_8">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- left  -->
+            <div class="main_container number9">
+
+                <div class="left_section">
+                    <div class="down_section Italy_img_9">
+
+                    </div>
+                </div>
+                <div class="right_section">
+                    <div class="information_box">
+                        <h1>Historic Centre of Siena </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit magni numquam,
+                            repellendus aliquid ipsam odit cumque accusantium et dolore temporibus ad molestias
+                            excepturi
+                            pariatur aspernatur. Recusandae iusto et obcaecati reiciendis soluta. Delectus perferendis
+                            quisquam hic inventore nam at vitae pariatur doloribus fugiat tempora nobis voluptates
+                            corrupti
+                            illo ut facere dolores, fugit eveniet rerum mollitia alias consequatur dolor. Ipsum dicta
+                            temporibus eligendi eos eveniet consequuntur voluptatibus, recusandae, et, dignissimos
+                            explicabo
+                            natus quaerat nam vero! Fugit non deserunt, reiciendis odio quia quidem esse cum ut sunt
+                            pariatur libero dolor officiis suscipit saepe aliquam necessitatibus totam facere tempore
+                            voluptates exercitationem odit nostrum debitis perferendis asperiores. Repellat vitae eum
+                            laboriosam adipisci magnam necessitatibus, culpa quisquam! Atque reiciendis ipsam hic
+                            incidunt
+                            iste explicabo consequatur ea doloribus facilis, nobis ad quod neque quam cupiditate
+                            obcaecati?
+                            Sequi animi debitis omnis veniam id minus porro repellat voluptatem at consequatur
+                            voluptatibus
+                            sint, eveniet nisi quaerat quam ullam dicta!</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- right  -->
+            <div class="main_container number10">
+
+                <div class="right_section"  >
+                    <div class="information_box">
+                        <h1>Milan (Santa Maria delle Grazie) </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit magni numquam,
+                            repellendus aliquid ipsam odit cumque accusantium et dolore temporibus ad molestias
+                            excepturi
+                            pariatur aspernatur. Recusandae iusto et obcaecati reiciendis soluta. Delectus perferendis
+                            quisquam hic inventore nam at vitae pariatur doloribus fugiat tempora nobis voluptates
+                            corrupti
+                            illo ut facere dolores, fugit eveniet rerum mollitia alias consequatur dolor. Ipsum dicta
+                            temporibus eligendi eos eveniet consequuntur voluptatibus, recusandae, et, dignissimos
+                            explicabo
+                            natus quaerat nam vero! Fugit non deserunt, reiciendis odio quia quidem esse cum ut sunt
+                            pariatur libero dolor officiis suscipit saepe aliquam necessitatibus totam facere tempore
+                            voluptates exercitationem odit nostrum debitis perferendis asperiores. Repellat vitae eum
+                            laboriosam adipisci magnam necessitatibus, culpa quisquam! Atque reiciendis ipsam hic
+                            incidunt
+                            iste explicabo consequatur ea doloribus facilis, nobis ad quod neque quam cupiditate
+                            obcaecati?
+                            Sequi animi debitis omnis veniam id minus porro repellat voluptatem at consequatur
+                            voluptatibus
+                            sint, eveniet nisi quaerat quam ullam dicta!</p>
+                    </div>
+                </div>
+
+                <div class="left_section" id="right_id">
+                    <div class="down_section Italy_img_10" id="down_id" >
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+
+    </body>
+
+</html>

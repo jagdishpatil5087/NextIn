@@ -1,0 +1,203 @@
+.review_section{
+    border: 2px solid transparent ;
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(40, 40, 40);
+}
+
+.review-parent-main{
+    border: 2px solid transparent ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.review-left-botton{
+    border: 2px solid transparent  ;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-center-part{
+    border: 2px solid transparent ;
+    width: 80%;
+    height: 100%;
+}
+.review-right-botton{
+    border: 2px solid transparent ;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-parent{
+    border: 2px solid transparent ;
+    width: 220px;
+    height: 350px;
+    background-color: transparent;
+    margin: 150px auto;
+    display: flex;
+}
+
+.center-child{
+    border: 5px solid transparent ;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(131, 131, 131);
+    transform-style: preserve-3d;
+    position: relative;
+    transition: 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ccml{
+    margin-left: -220px;
+}
+.center-child-1{   
+    transform: perspective(1200px) rotateX(-5deg) rotateY(0deg) translateZ(-260px);    
+}
+
+
+.center-child-2{
+    transform: perspective(1200px) rotateX(-5deg) rotateY(45deg) translateZ(-260px);     
+}
+
+.center-child-3{
+    transform: perspective(1200px) rotateX(-5deg) rotateY(90deg) translateZ(-260px);    
+}
+
+.center-child-4{
+    transform: perspective(1200px) rotateX(-5deg) rotateY(135deg) translateZ(-260px); 
+    z-index: 1;
+}
+
+.center-child-5{
+    transform: perspective(1200px) rotateX(-5deg) rotateY(180deg) translateZ(-260px); 
+    z-index: 1;  
+}
+
+.center-child-6{
+    transform: perspective(1200px) rotateX(-5deg) rotateY(225deg) translateZ(-260px); 
+    z-index: 1;
+}
+
+.center-child-7{
+    transform: perspective(1200px) rotateX(-5deg) rotateY(270deg) translateZ(-260px);   
+}
+
+.center-child-8{
+    transform: perspective(1200px) rotateX(-5deg) rotateY(315deg) translateZ(-260px); 
+}
+
+
+
+.rotate-180-box{
+    border: 2px solid transparent ;
+    width: 95%;
+    height: 95%;
+    transform: rotateY(180deg);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-chard-top{
+    border: 2px solid transparent ;
+    width: 100%;
+    height: 35%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.review-photo-1{
+    background-image: url(Screenshot.png);
+}
+.review-photo-2{
+    background-image: url(Screenshot2.png);
+}
+.review-photo-3{
+    background-image: url(Screenshot3.png);
+}
+.review-photo-4{
+    background-image: url(Screenshot4.png);
+}
+.review-photo-5{
+    background-image: url(Screenshot5.png);
+}
+.review-photo-6{
+    background-image: url(Screenshot6.png);
+}
+.review-photo-7{
+    background-image: url(Screenshot7.png);
+}
+.review-photo-8{
+    background-image: url(Screenshot8.png);
+}
+
+.review-chard-middle{
+    border: 2px solid transparent ;
+    width: 100%;
+    height: 10%;
+}
+
+.rating_rotate_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rating_rotate_box{
+    border: 2px solid transparent ;
+    height: 100%;
+    width: 19%;
+    background-image:url(icons8-star-96.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+.rotate_white_star{
+    background-image: url(white-star.png);
+}
+
+.review-chard-bottom{
+    border: 2px solid transparent ;
+    width: 100%;
+    height: 50%;
+}
+
+
+
+
+.review-botton-box{
+    border: 2px solid transparent;
+    width: 70px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.514);  
+    position: relative;
+    z-index: 10;
+}
+
+.review-botton-box:hover{
+    background-color: black;
+}
+#review-left-box{
+    background-image: url(arrow-2.png);
+
+}
+
+#review-right-box{
+    background-image: url(arrow-1.png);
+
+}

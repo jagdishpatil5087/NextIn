@@ -1,0 +1,45 @@
+.section-img-side{
+    border: 2px solid black ;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main {
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    background-image: url("travel-quotes/quotes_1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.circle {
+    border: 2px solid transparent;
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    border-radius: 50%;
+    background-image: url("travel-quotes/quotes_2.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    
+}
+
+.box {
+    border: 2px solid transparent;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    cursor: none;
+    
+}
+
